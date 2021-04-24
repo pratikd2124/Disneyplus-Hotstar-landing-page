@@ -40,6 +40,9 @@
             color: white;text-decoration: none;
             font-family:'Roboto',sans-serif;text-transform: uppercase;
         }
+        .attribute{font-family: arial,sans-serif;}
+        .attribute small a{text-decoration:none;color:#fff;}
+
         @media only screen and (min-width: 701px) {
             .banner{
                 position: absolute;top:55%;left: 50%; transform: translate(-50%,-50%);
@@ -88,8 +91,7 @@
             line-height: 60px;font-size: 13px;
         }
         .everything .watch{
-            position: absolute;
-            bottom: 10%;line-height: 20px;
+            line-height: 20px;
         }
         .everything .watch i{
             font-size: 2vw;
@@ -99,7 +101,7 @@
             color: aliceblue;
             border: 0px;padding: 20px;
         }
-        .attribute p{
+        .attribute small{
             position: absolute;bottom: 1%;right: 5%;
             color: white;
         }
@@ -116,31 +118,34 @@
                 -moz-box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.603);
                 box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.605);
             }
-            
+            .nav{
+            width: 600px;
+            }
             .banner {
                 display: flex;flex-direction: column;
-                float: left;align-items: center;color: #fff;
+                color: #fff;
             }
+            
             .content .everything{
-                margin-left: 7%;text-align: left;
-                margin-top: 100px;float: left;
+                margin-left: 1px;padding:10%;
+                
                 
             }
             .content .everything .title{
                 font-family: 'Roboto', sans-serif;
-                font-size: 2.8vw;line-height: 5vw;
-                text-transform: uppercase;
+                font-size: 28px;
+                text-transform: uppercase;padding-bottom: 5px;
                 text-shadow: 2px 3px  10px rgba(0, 0, 0, 0.507);
             }
             .everything .episodes{
                 font-family: Arial, Helvetica, sans-serif;
-                font-size:1.4vw;line-height: 5vw;
+                font: size 17px;
             }
             .everything .vip{
                 font-family: 'Roboto', sans-serif;text-transform: uppercase;
                 color: black;background-color: goldenrod;
-                padding: 4px;border-radius: 5px;font-size: 12px;
-                font-weight: bold;line-height: 30px;border: 1px solid #000000;
+                padding: 4px;border-radius: 5px;font-size: 15px;
+                font-weight: bold;line-height: 40px;border: 1px solid #000000;
             }
             .everything .description{
                 font-family: 'Oswald', sans-serif;
@@ -148,7 +153,7 @@
             }
             .everything .starring{
                 font-family:  Arial, sans-serif;
-                line-height: 30px;font-size: 13px;
+                font-size: 15px;padding-top:15px
             }
             .everything .watch{
                 line-height: 30px;
@@ -161,8 +166,16 @@
                 color: aliceblue;
                 border: 0px;padding: 20px;
             }
-            .attribute {padding: 0%;
-                position: absolute;bottom: 0%;left: 2%;
-                color: white;;
+            .wrap{
+                display: flex;flex-direction:column;
+                align-items:flex-start;
+            }
+            .attribute {
+                color: white;font-family: Arial, Helvetica, sans-serif;
+            }
+            .attribute small{
+                font-size: 12px;
+                position: absolute;
+                left: 70%;
             }
         }
